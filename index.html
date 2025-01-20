@@ -9,7 +9,6 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f9;
       color: #333;
-      text-align: center;
       margin: 0;
       padding: 0;
     }
@@ -18,11 +17,24 @@
       color: #2d3e50;
       margin-top: 50px;
       font-size: 2.5em;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-top: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #555;
+      text-align: center;
     }
 
     ul {
       list-style-type: none;
       padding: 0;
+      margin-left: 20px; /* Зміщення списку вліво */
     }
 
     li {
@@ -55,6 +67,17 @@
 </head>
 <body>
   <h1>Performance Reports v3.4.2</h1>
+
+  <!-- Доданий текст пояснення -->
+  <p>
+These performance reports reflect the testing results for different thread configurations for two different versions of the CT application. The tests measure the performance impact of running 20, 50, and 100 threads simultaneously. Each report contains details on system performance, including response times, throughput, and other relevant metrics. </p>
+
+  <p>The tests were conducted to measure response times for entity lists, such as containers, devices, alerts, and others, using partial filtering to simulate real-world platform usage scenarios.  </p>
+
+<p>Choose one of the reports below to view the detailed results for each configuration. </p>
+
+ 
+
   <ul>
     <li><a href="./v%203.4.2/20_threads_report/index.html">20 Threads Report</a></li>
     <li><a href="./v%203.4.2/50_threads_report/index.html">50 Threads Report</a></li>
